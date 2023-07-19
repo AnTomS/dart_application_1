@@ -129,17 +129,20 @@ class _CryptoCoinScreenState extends State<CryptoCoinScreen> {
 
   @override
   void didChangeDependencies() {
-    final arg = ModalRoute.of(context)?.settings.arguments;
-    if (arg == null) {
-      log("arg is null");
-      return;
-    }
-    if (arg is! String) {
-      log("arg is $arg");
-      return;
-    }
+    final args = ModalRoute.of(context)?.settings.arguments;
 
-    coinName = arg;
+    assert(args != null && args is String, "");
+
+    // if (arg == null) {
+    //   log("arg is null");
+    //   return;
+    // }
+    // if (arg is! String) {
+    //   log("arg is $arg");
+    //   return;
+    // }
+
+    coinName = args as String;
     setState(() {});
     super.didChangeDependencies();
   }
