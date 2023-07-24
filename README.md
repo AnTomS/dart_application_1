@@ -1,16 +1,21 @@
 # dart_application_1
 
-A new Flutter project.
+## Изучение кросс-платформенных решений на языке Flutter.
 
-## Getting Started
+Приложение для отслеживания актуального курса криптовалюты.
 
-This project is a starting point for a Flutter application.
+### Задача
 
-A few resources to get you started if this is your first Flutter project:
+-познакомиться с Flutter, понять синтаксис языка, вёрстку, работу с данными, архитектуру приложения.
+-знакомство с языком будет происходить с помощью курса от Стаса Ильина
+ссылка на курс https://www.youtube.com/watch?v=FI-VshKxDZ0&list=PLtUuja72DaLIiIYLQP7rUjxItkDjHcSMw
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Функционал приложения:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+-Загрузка списка криптовалюты с помощью Апи запроса.
+-Апи-запрос включает в себя саму валюту, её картинку, цену в USD на момент запроса.
+
+### Реализация приложения
+
+- Dart for all code
+- Dio for API
