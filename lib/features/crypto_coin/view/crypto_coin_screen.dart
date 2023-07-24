@@ -27,6 +27,15 @@ class _CryptoCoinScreenState extends State<CryptoCoinScreen> {
         centerTitle: true,
         title: Text(coinName ?? "..."),
       ),
+      body: Column(
+        children: [
+          Text("test flutter "),
+          ElevatedButton(
+            onPressed: () => print("test flutter "),
+            child: Text("нажми на кнопку"),
+          )
+        ],
+      ),
     );
   }
 }
