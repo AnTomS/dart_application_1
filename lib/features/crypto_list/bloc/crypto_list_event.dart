@@ -1,5 +1,15 @@
+// ignore_for_file: public_member_api_docs, sort_constructors_first
 part of 'crypto_list_bloc.dart';
 
-class CryptoListEvent {}
+abstract class CryptoListEvent extends Equatable {}
 
-class LoadCryptoListEvent extends CryptoListEvent {}
+class LoadCryptoListEvent extends CryptoListEvent {
+  LoadCryptoListEvent({
+    this.completer,
+  });
+
+  final Completer? completer;
+
+  @override
+  List<Object?> get props => [completer];
+}
