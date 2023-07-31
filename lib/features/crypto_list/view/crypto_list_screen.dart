@@ -87,21 +87,6 @@ class _CryptoListScreenState extends State<CryptoListScreen> {
           },
         ),
       ),
-
-      // (_cryptoCoinsList == null)
-      //     ? const Center(
-      //         child: CircularProgressIndicator(),
-      //       )
-      //     : ListView.separated(
-      //         padding: const EdgeInsets.only(top: 16),
-      //         itemCount: _cryptoCoinsList!.length,
-      //         separatorBuilder: (context, index) => const Divider(),
-      //         itemBuilder: (context, i) {
-      //           final coin = _cryptoCoinsList![i];
-      //           debugPrint(coin.name);
-      //           return CryproCoinTile(coin: coin);
-      //         },
-      //       ),
     );
   }
 }
