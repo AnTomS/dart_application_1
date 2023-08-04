@@ -37,6 +37,8 @@ class _CryptoCoinScreenState extends State<CryptoCoinScreen> {
         builder: (context, state) {
           if (state is CryptoCoinDetailsLoaded) {
             final coinDetails = state.coinDetails;
+            debugPrint(coinDetails.name);
+
             return Center(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,

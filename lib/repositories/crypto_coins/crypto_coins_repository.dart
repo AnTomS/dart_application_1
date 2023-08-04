@@ -30,17 +30,17 @@ class CryptoCoinsRepository implements AbstactCoinsRepository {
     return cryptoCoinsList;
   }
 
-  Future<CryptoCoin> getCoinDetails(String currencyCode) async {
+  @override
+  Future<CryptoCoinDetail> getCoinDetails(String currencyCode) async {
     final response = await dio.get(
         "https://min-api.cryptocompare.com/data/pricemultifull?fsyms=$currencyCode&tsyms=USD");
     final data = response.data as Map<String, dynamic>;
     final dataRaw = data['RAW'] as Map<String, dynamic>;
-    final coinData =
-        dataRaw["BTC,ETH,BNB,LTC,SOL,DOGE,ADA"] as Map<String, dynamic>;
+    final coinData = dataRaw[currencyCode] as Map<String, dynamic>;
     final usdData = coinData['USD'] as Map<String, dynamic>;
     final price = usdData['PRICE'];
     final imageUrl = usdData['IMAGEURL'];
-    final toSimbol = usdData['SYMBOL'];
+    final toSymbol = usdData['TOSYMBOL'];
     final hight24Hour = usdData['HIGH24HOUR'];
     final low24Hours = usdData['LOW24HOUR'];
 
@@ -48,7 +48,7 @@ class CryptoCoinsRepository implements AbstactCoinsRepository {
       name: currencyCode,
       priceInUSD: price,
       imageUrl: 'https://www.cryptocompare.com/$imageUrl',
-      toSymbol: toSimbol,
+      toSymbol: toSymbol,
       hight24Hour: hight24Hour,
       low24Hours: low24Hours,
     );

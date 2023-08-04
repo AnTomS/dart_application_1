@@ -1,6 +1,9 @@
-import 'package:dart_application_1/repositories/crypto_coins/crypto_coins.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:equatable/equatable.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:get_it/get_it.dart';
+import 'package:talker_flutter/talker_flutter.dart';
+
+import '../../../repositories/crypto_coins/crypto_coins.dart';
 
 part 'crypto_coin_details_event.dart';
 part 'crypto_coin_details_state.dart';
@@ -25,10 +28,10 @@ class CryptoCoinDetailsBloc
 
       final coinDetails =
           await coinsRepository.getCoinDetails(event.currencyCode);
-
-      emit(CryptoCoinDetailsLoaded(coinDetails as CryptoCoinDetail));
-    } catch (e) {
+      emit(CryptoCoinDetailsLoaded(coinDetails));
+    } catch (e, st) {
       emit(CryptoCoinDetailsLoadingFailure(e));
+      GetIt.I<Talker>().handle(e, st);
     }
   }
 }

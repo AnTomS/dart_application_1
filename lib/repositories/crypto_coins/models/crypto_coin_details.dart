@@ -3,7 +3,7 @@
 import '../crypto_coins.dart';
 
 class CryptoCoinDetail extends CryptoCoin {
-  CryptoCoinDetail({
+  const CryptoCoinDetail({
     required super.name,
     required super.priceInUSD,
     required super.imageUrl,
