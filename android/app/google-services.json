@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "251863947541",
+    "project_id": "crypto-list-app-d3a81",
+    "storage_bucket": "crypto-list-app-d3a81.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:251863947541:android:fb5e5d84b73a0424d8f11c",
+        "android_client_info": {
+          "package_name": "com.example.dart_application_1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "251863947541-u628bu870bolqsfh1230fk7db1gf83ml.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtBjCUrlbGaJD1IgWm8CwpWBkXC_Xj7UE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "251863947541-u628bu870bolqsfh1230fk7db1gf83ml.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "251863947541-i163r3rqqchg95rtjf7nse5rfkcq6i23.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.dartApplication1"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
