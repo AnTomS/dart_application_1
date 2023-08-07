@@ -43,6 +43,8 @@ dependencies:
   talker_flutter: ^3.2.0
   talker_dio_logger: ^2.3.0
   talker_bloc_logger: ^2.2.0
+  firebase_core: ^2.8.0
+  firebase_core_desktop: ^1.0.2
 
 dev_dependencies:
   flutter_test:
