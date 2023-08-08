@@ -61,8 +61,7 @@ class DefaultFirebaseOptions {
     messagingSenderId: '251863947541',
     projectId: 'crypto-list-app-d3a81',
     storageBucket: 'crypto-list-app-d3a81.appspot.com',
-    iosClientId:
-        '251863947541-i163r3rqqchg95rtjf7nse5rfkcq6i23.apps.googleusercontent.com',
+    iosClientId: '251863947541-i163r3rqqchg95rtjf7nse5rfkcq6i23.apps.googleusercontent.com',
     iosBundleId: 'com.example.dartApplication1',
   );
 
@@ -72,8 +71,7 @@ class DefaultFirebaseOptions {
     messagingSenderId: '251863947541',
     projectId: 'crypto-list-app-d3a81',
     storageBucket: 'crypto-list-app-d3a81.appspot.com',
-    iosClientId:
-        '251863947541-rar8mg7sofs5s9egon7tjmp3iofh5obu.apps.googleusercontent.com',
+    iosClientId: '251863947541-rar8mg7sofs5s9egon7tjmp3iofh5obu.apps.googleusercontent.com',
     iosBundleId: 'com.example.dartApplication1.RunnerTests',
   );
 
